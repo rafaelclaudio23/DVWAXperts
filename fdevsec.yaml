@@ -1,6 +1,17 @@
 id:
   org: 62368501-4a0e-4eb9-a07e-f45b4f211b08
   app: 715bf637-d590-4b90-8345-ade3473d9c05
+  scanners:
+- sast
+- dast
+- secret
+- sca
+- iac
+- container
+dast:
+url: http://a3905cbbcd0a848039bb881cfe981000-2138678413.us-east-2.elb.amazonaws.com:8081/
+fortipentest_scanner: false #true|false
+full_scan: true #true|false
 
 # If below settings are not configured, scans will be performed for all supported scanners.
 # scanners:
